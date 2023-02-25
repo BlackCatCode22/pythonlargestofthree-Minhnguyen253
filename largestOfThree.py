@@ -1,45 +1,32 @@
 # largestOfThree.py
-# dH 2/15/23
-#
-# approved solution for Largest of Three program
-#
-# input: three integers from the user
-# processing: find the sum of the three integers and the largest of the three
-# output: largest and total
-#
-# References:
-#   https://www.w3schools.com/python/python_user_input.asp
-#   https://www.w3schools.com/python/python_conditions.asp
-#
-#
-#
-print("\n\n This is the Largest of Three program...")
-# input three integers from the user.
-num1 = input("\nEnter your first integer: ")
-num2 = input("\nEnter your second integer: ")
-num3 = input("\nEnter your third and last integer: ")
+# dH 2/25/23
 
-print("num1 = " + num1 + " num2 = " + num2 + " and num3 = " + num3)
+print("Minh Nguyen 0920131\n")
+print("CIT-95 Python SP23")
+print("\nThis is the Largest of Three program...")
+# input three integers from the user.
+n1 = input("\nPlease enter your first integer: ")
+n2 = input("\nPlease enter your second integer: ")
+n3 = input("\nPlease enter your third and last integer: ")
+
+print("first integer = " + n1 + " , second integer = " + n2 + " and last integer = " + n3)
 
 # Find the largest
-largest = 0
-
-if num1 > num2:
-    if num1 > num3:
-        largest = num1
-    else:
-        largest = num3
+# Check if n1 is the largest number:
+if n1 >= n2 and n1 >= n3:
+    largest = n1
+# Check if n2 is the largest number:
+elif n2 >= n1 and n2 >= n3:
+    largest = n2
+# Check if n3 is the largest number:
 else:
-    if num2 > num3:
-        largest = num2
-    else:
-        largest = num3
+    largest = n3
 
 # output the largest
-print("The largest is " + largest)
+print("The largest number is ", largest)
 
 # find the sum
-the_sum = int(num1) + int(num2) + int(num3)
+the_sum = int(n1) + int(n2) + int(n3)
 
 # output the sum
-print("The sum of " + num1 + " and " + num2 + " and " + num3 + " is " + str(the_sum))
+print("The sum of " + n1 + " and " + n2 + " and " + n3 + " is " + str(the_sum))
